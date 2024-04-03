@@ -1,0 +1,86 @@
+
+link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:blueviolet;
+    background-color: bisque;
+}
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: cadetblue;
+}
+img {
+    /* Border properties */
+    border: 5px solid black; /* Set a 1px solid light gray border */
+  
+    /* Padding properties */
+    padding: 10px ;  /* Add 10px padding around the image content */
+  
+    /* Border-radius properties */
+    border-radius: 500px;  /* Add a slight rounded corner effect (5px) */
+  
+    /* Additional styling (optional) */
+    display: block;  /* Make images behave like block elements for better layout control */
+    margin-bottom: 20px; /* Add some space between images */
+    transition: transform 0.5s ease-in-out;
+    filter: grayscale(100%); /* Set initial filter to grayscale */
+    transition: filter 0.5s ease-in-out;
+   
+  }
+ 
+  .hero-image {
+    position: relative; /* Make the container relative for absolute positioning */
+  }
+  .hero-image span {
+    position: absolute; /* Make the text absolutely positioned within the container */
+    top: 50%; /* Position the text vertically at 50% */
+    left: 50%; /* Position the text horizontally at 50% */
+    transform: translate(-50%, -50%);  /* Center the text by offsetting its own dimensions */
+    color: white;  /* Optional: Set text color if needed */
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Defines two columns of equal width */
+    grid-gap: 10px; /* Optional: Adds spacing between columns */
+  }
+  
+  .column {
+    padding: 10px; /* Optional: Add padding for content */
+  }
+  nav {
+    display: flex; /* Apply flexbox to the navigation element */
+    justify-content: space-between; /* Distribute links horizontally */
+  }
+  
+  nav ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 200px; /* Add some margin between list items */
+    
+  }
+    
+  img:hover {
+    transform: scale(1.1); /* Increase image size on hover */
+    opacity: 0.9;
+    filter: grayscale(0);
+  }
+  body {
+    background-image: url("data:image/jpeg;base64,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"); /* Replace with the path to your image */
+    background-repeat: repeat;  /* Optional: Controls how the image repeats (default) */
+    background-position: center;  /* Optional: Controls the position of the image */
+    background-size: cover;  /* Optional: Controls the size of the image */
+  }
